@@ -17,6 +17,10 @@ public class StackComposition {
 	}
 
 	public synchronized void print() {
-		return stackList.print();
+		stackList.print();
+	}
+
+	public synchronized void push(Object insertItem) {
+		stackList.insertAtFront(insertItem);
 	}
 }
