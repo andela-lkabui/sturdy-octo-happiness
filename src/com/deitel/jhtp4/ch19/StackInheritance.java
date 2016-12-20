@@ -13,6 +13,4 @@ public class StackInheritance extends List {
 	public synchronized Object pop() throws EmptyListException {
 		return removeFromFront();
 	}
-
-}
 }

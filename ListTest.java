@@ -14,9 +14,9 @@ public class ListTest {
 		list.print();
 		list.insertAtFront(character);
 		list.print();
-		list.insertAtFront(integer);
+		list.insertAtBack(integer);
 		list.print();
-		list.insertAtFront(string);
+		list.insertAtBack(string);
 		list.print();
 
 		Object removedObject;
