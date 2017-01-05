@@ -27,7 +27,7 @@
 * A _Stack_ is a data structure in which data can only be added/removed from one end, usually referred to as the _top_.
 * For this reason, it's referred to as a _last in, first out_ (*LIFO*) data structure.
 * Implementation of this structure is similar to that of a Linked List, each `ListNode` object is called a _node_ and a link with a `null` reference denotes the bottom of the Stack.
-* The primary methods are;
+* The primary methods for operations are;
   * *push* - adds a new _node_ on the _top_ of the Stack
   * *pop* - removes a _node_ from the _top_ of the Stack
 
@@ -37,3 +37,21 @@
 
  > The Stack is also implemented via [_inheritance_](https://github.com/andela-lkabui/sturdy-octo-happiness/blob/ft-readme/src/com/deitel/jhtp4/ch19/StackInheritance.java) (vs the _composition_ implementation above). However, inheritance is less elegant since it allows *insertAtBack* and *removeFromBack* methods of *List* to be available for use. These two methods completely negate the philosophy behind Stacks
 
+# 4. Queues
+* The idea behind queues is derived from the everyday experiences encountered while waiting for a service e.g. _queuing_ at a checkout line in a supermarket, _queuing_ at the banking halls etc.
+
+> To the people that jump everyday queues and fail to grasp the Queues concept, karma is something, isn't it!?
+
+* In _Queues_, data can only be added at one end called the _tail_, and removed from the other end called the _head_. For this reason, it's called a _first in, first out_ (*FIFO*) data structure.
+* The primary methods for operations are;
+  * *enqueue* - to insert nodes at the tail
+  * *dequeue* - to remove nodes at the head
+
+* The Queue is implemented [here](https://github.com/andela-lkabui/sturdy-octo-happiness/blob/master/src/com/deitel/jhtp4/ch19/QueueInheritance.java).
+* The class inherits from List implements *enqueue* and *dequeue* via List methods *insertAtBack* and *removeFromFront*.
+
+> The implementation above uses inheritance. Other List methods like *insertAtFront*, *removeFromBack* are still available in objects of QueueInheritance. These two methods negate the philosophy behind creation of Queues.
+
+> Composition (not implemented in the repo yet) is more elegant and will not avail these methods unless they are explicitly coded as such.
+
+.
