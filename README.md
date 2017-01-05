@@ -80,3 +80,6 @@
     1. Post Order Traversal - Traverses through the left child node, the right node then the root node respectively.
 	2. In Order Traversal - Traverses through the left child node, the root node then the right child node respectively.
 	3. Pre Order Traversal - Traverses through the root node, the left child node then the right child node respectively.
+
+# Credits
+* This material has been sourced from _Java How To Program, 4th Edition_ written by Paul and Harvey Deitel. This content doesn't do justice to the brilliance potrayed in the entirety of that book.
