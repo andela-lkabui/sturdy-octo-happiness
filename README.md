@@ -21,3 +21,19 @@
 * a `nextNode` with the value `null` denotes the end of the LinkedList.
 * [Here](https://github.com/andela-lkabui/sturdy-octo-happiness/blob/master/src/com/deitel/jhtp4/ch19/List.java) is the implementation of the Linked List for this repo.
 * This is the final [product](https://github.com/andela-lkabui/sturdy-octo-happiness/blob/ft-readme/ListTest.java) being demonstrated.
+
+# 3. Stacks
+* In this context, a _Stack_ is a constrained version of a Linked List.
+* A _Stack_ is a data structure in which data can only be added/removed from one end, usually referred to as the _top_.
+* For this reason, it's referred to as a _last in, first out_ (*LIFO*) data structure.
+* Implementation of this structure is similar to that of a Linked List, each `ListNode` object is called a _node_ and a link with a `null` reference denotes the bottom of the Stack.
+* The primary methods are;
+  * *push* - adds a new _node_ on the _top_ of the Stack
+  * *pop* - removes a _node_ from the _top_ of the Stack
+
+ * The Stack class is implemented [here](https://github.com/andela-lkabui/sturdy-octo-happiness/blob/ft-readme/src/com/deitel/jhtp4/ch19/StackComposition.java)
+
+ > Note the similarity in nature amongst Linked Lists and Stacks. The attribute `stackList` of type `List` is used to simulate *push* and *pop* via its *insertAtFront* and *removeFromFront* methods respectively
+
+ > The Stack is also implemented via [_inheritance_](https://github.com/andela-lkabui/sturdy-octo-happiness/blob/ft-readme/src/com/deitel/jhtp4/ch19/StackInheritance.java) (vs the _composition_ implementation above). However, inheritance is less elegant since it allows *insertAtBack* and *removeFromBack* methods of *List* to be available for use. These two methods completely negate the philosophy behind Stacks
+
