@@ -54,4 +54,29 @@
 
 > Composition (not implemented in the repo yet) is more elegant and will not avail these methods unless they are explicitly coded as such.
 
-.
+# 5. Trees
+* Unlike _Linked Lists_, _Stacks_ and _Queues_, the _Tree_ structure relies on `TreeNode` (doubly linked) instead of `ListNode` (singly linked).
+* Doubly linked simply means that the class has two members (*leftNode* and *rightNode*) that refer to the same class type.
+
+  ## i. The self referential class
+  * [TreeNode](https://github.com/andela-lkabui/sturdy-octo-happiness/blob/ft-readme/src/com/deitel/jhtp4/ch19/TreeNode.java) is the self referential class that will be creating nodes in the _Tree_.
+  
+  ## ii. The Tree
+  * This will be a _binary tree_. It's not linear like the previous data structures we've come across so far.
+  * The _root node_ is the first node in a Tree
+  * Subsequent nodes branch off the _root node_ and are referred to as _child nodes_.
+  * Each node in the Tree may have no child nodes, a _left child node_ only, a _right child node_ only or both left and right child nodes.
+  * A node with no children is called a _leaf node_.
+  
+  * The Tree's imlpementation can be found [here](https://github.com/andela-lkabui/sturdy-octo-happiness/blob/ft-readme/src/com/deitel/jhtp4/ch19/Tree.java).
+  * The test for this Tree only stores integers for simplicity when fleshing out how binary trees are supposed to work. The gist of binary trees is;
+    1. The root node is the first node in the Tree (it has no parent nodes)
+	2. Nodes whose `data` attribute contain a value that is less than the parent node's data attribute are stored in the `leftNode` variable.
+	3. Nodes whose `data` attribute contain a value that is more than the parent node's data attribute are stored in the `rightNode` variable.
+	4. Leaf nodes signal the end of a branch
+
+
+  * The tree's test generates random integers and stores them in the tree. Tree traversals are then performed to verify the integrity of the structure. There are three kinds of tree traversals;
+    1. Post Order Traversal - Traverses through the left child node, the right node then the root node respectively.
+	2. In Order Traversal - Traverses through the left child node, the root node then the right child node respectively.
+	3. Pre Order Traversal - Traverses through the root node, the left child node then the right child node respectively.
